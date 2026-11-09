@@ -1,0 +1,40 @@
+{
+  "name": "mukut-erp-tests",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playwright test suite for Mukut ERP: Purchase, Sales, Inventory, Accounting",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --project=smoke",
+    "test:smoke:xbrowser": "playwright test --project=smoke --project=smoke-firefox --project=smoke-webkit",
+    "test:p0": "playwright test --grep @P0",
+    "test:p2p": "playwright test --project=p2p",
+    "test:o2c": "playwright test --project=o2c",
+    "test:r2r": "playwright test --project=r2r",
+    "test:modules": "playwright test --project=modules",
+    "test:api": "playwright test --project=api",
+    "test:a11y": "playwright test --project=a11y",
+    "test:visual": "playwright test --project=visual",
+    "test:ui": "playwright test --ui",
+    "test:list": "playwright test --list",
+    "report": "playwright show-report reports/html",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.0.0",
+    "eslint-plugin-playwright": "^2.0.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.0.0"
+  }
+}
