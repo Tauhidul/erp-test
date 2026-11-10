@@ -79,5 +79,12 @@ export default defineConfig({
     uiProject('visual', './tests/visual', {
       use: { ...desktopChrome, viewport: { width: 1440, height: 900 } },
     }),
+
+    // External public site (W3Schools Python tutorial): no ERP login needed
+    {
+      name: 'w3cschool',
+      testDir: './tests/w3cschool',
+      use: { ...desktopChrome, baseURL: 'https://www.w3schools.com' },
+    },
   ],
 });
