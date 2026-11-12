@@ -1,7 +1,7 @@
 # Mukut ERP: Playwright test suite
 
 Automated tests for the Mukut ERP apps (**Purchase, Sales, Inventory, Accounting**), organised around the three
-business processes (**Procure to Pay, Order to Cash, Record to Report**).
+business processes (**Procure to Pay, Order to Cash, Record to Report, Order To Delivery , PO To Receive**).
 
 The design follows the Mukut testing briefing: few end-to-end tests that follow money and stock across modules,
 many fast tests underneath, and every test creates its own data.
